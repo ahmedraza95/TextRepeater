@@ -1,0 +1,138 @@
+.text {
+    width: 99%;
+    height: 10vh;
+    font-size: 14px;
+    padding: 4%;
+
+}
+.divInput {
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    
+}
+.number {
+width: 40%;
+height: 10vh;
+padding: 4%;
+}
+.addLi {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* justify-content: center; */
+    align-items: flex-start;
+    margin-left:4%;
+    height: 40vh;
+    border: 1px solid black;
+    overflow: scroll;
+    margin-top: 8%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    flex-direction: column;
+}
+
+button {
+    width: 40%;
+    height: 6vh;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+button:hover {
+    background-color: rgb(83, 78, 78);
+    color: rgb(233, 160, 160);
+}
+/* From Uiverse.io by WhiteNervosa */
+/* Variation of work by @mrhyddenn for Radios */
+
+
+.check {
+    cursor: pointer;
+    /* background-color: #a3e583; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34, 50, 84, 0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+.check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+    opacity: 1;
+}
+
+.check:hover svg {
+    stroke: var(--accent-color, #000000);
+}
+
+#cbx2:checked+.check svg {
+    stroke: var(--accent-color, #000000);
+}
+
+#cbx2:checked+.check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx2:checked+.check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
